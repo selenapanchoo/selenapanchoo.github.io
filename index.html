@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Home | Selena Panchoo</title>
+
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="https://raw.githubusercontent.com/mattboldt/typed.js/master/js/typed.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style>
+			html {
+				background: linear-gradient(rgba(178, 0, 121,.5), rgba(178, 0, 121,.5)), url(bg.png) no-repeat left center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}			
+			body {
+				font-family: 'Open Sans', sans-serif;
+				text-align: center;
+				color:#ffffff;
+				width: auto;
+				height: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				display: -ms-flexbox;
+				-ms-flex-pack: center;
+				width: 100%;
+				-moz-box-sizing: border-box;
+			}
+			h1 {
+				font-family: 'Roboto', sans-serif;
+ 				font-size:2.2rem; 
+				margin: 10px;
+			}
+			p {
+				margin: 10px;
+ 				font-size:1rem; 
+			}
+			.typing {
+				padding-left:5px;
+			}
+			.social-media-links a {
+				color:#ffffff; 
+ 				font-size:2.5rem; 
+				margin: 3px;
+			}
+			.social-media-links a:hover {
+				color:rgba(255, 255, 255, 0.9)
+			}
+			.box {
+				position: absolute;
+				-webkit-transform-style: preserve-3d;
+				-o-transform-style: preserve-3d;
+				-ms-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width:400px;
+				margin-bottom:20px;
+			}
+			.typed-cursor{
+				opacity: 1;
+				-webkit-animation: blink 0.7s infinite;
+				-moz-animation: blink 0.7s infinite;
+				animation: blink 0.7s infinite;
+				font-weight: bold;
+			}
+			@keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:0.8; }
+			}
+			@-webkit-keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			@-moz-keyframes blink{
+				0% { opacity:1; }
+				50% { opacity:0; }
+				100% { opacity:1; }
+			}
+			@media (min-width:480px) {
+				.box {width:460px;}
+				h1 {font-size:3rem;	}
+				p {font-size: 1.25rem;}
+				.social-media-links a {font-size:3.4rem;}
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="box">
+			<h1 id="title">Selena Panchoo</h1>
+			<p class="typing"><span id="welcome"> </span></p>
+			<p class="social-media-links">
+				<a href="https://www.instagram.com/selenapanchoo/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://github.com/selenapanchoo" title="Github" target="_blank"><i class="fa fa-git-square"></i></a>
+				<a href="https://www.linkedin.com/in/selenapanchoo" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+				<a href="https://twitter.com/selenapanchoo" title="Twitter" target="_blank"><i class="fa fa-twitter-square"></i></a>
+			</p>
+		</div>
+
+		<script>
+			$(function(){
+				$("#welcome").typed({
+				    strings: ["Hello. Is it me you're looking for?"],
+				    typeSpeed: 20
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
