@@ -1,2 +1,2 @@
 # selenapanchoo.github.io
-Personal Website
+Basic personal website.
